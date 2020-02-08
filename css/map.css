@@ -1,6 +1,17 @@
 
 body { margin: 0; padding: 0; }
-#map {width: 900px; height: 600px;};
+#map {width: 900px; height: 600px;}
+
+#form
+{
+  margin: 0; padding: 0;
+  font-size: medium;
+  text-align: center;
+  width: 200px; height: 300px;
+  left: 100px;
+  right: 200px;
+}
+;
 #info {
     display: block;
     position: relative;

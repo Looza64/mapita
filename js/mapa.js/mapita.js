@@ -39,7 +39,7 @@ map.on('mousemove', function(e) {
    
     
     var marker = new mapboxgl.Marker(pancake)
-        .setLngLat( e.lngLat.wrap())
+       .setLngLat( e.lngLat.wrap())
         .addTo(map);
 
    });
@@ -80,7 +80,11 @@ map.addLayer({
 });
 });
 
-       
+       fetch('https://raw.githubusercontent.com/Looza64/mapita/master/geojson/ual.geojson')
+       .then(datos => datos.json())
+       .then(datos=>{
+           console.log(datos)
+       } )
     
    
     
